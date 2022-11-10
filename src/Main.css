@@ -1,0 +1,61 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10vh auto;
+  width: 50%;
+  background-color: rgb(241, 210, 210);
+}
+
+form {
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type='text'] {
+  width: 50%;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type='submit'] {
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.post-container {
+  width: 98%;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  background-color: white;
+  margin: 5px;
+}
+
+.post__user-name {
+  color: blueviolet;
+  font-weight: bold;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.post__created {
+  font-size: 0.8em;
+  padding: 10px;
+  padding-top: 0;
+}
+
+.post__content {
+  padding: 10px;
+}
+

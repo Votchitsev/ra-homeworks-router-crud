@@ -7,14 +7,6 @@
   background-color: rgb(241, 210, 210);
 }
 
-form {
-  width: 95%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: space-around;
-}
-
 input[type='text'] {
   width: 50%;
   height: 25px;
@@ -22,12 +14,19 @@ input[type='text'] {
   border-radius: 5px;
 }
 
-input[type='submit'] {
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px 10px auto;
+  padding: 10px;
   border: none;
   background-color: blueviolet;
   color: white;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
+  height: 30px;
 }
 
 .post-container {

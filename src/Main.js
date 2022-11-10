@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Main.css';
 import Post from './Post';
 
@@ -13,10 +14,7 @@ function Main() {
 
   return (
     <div className="wrapper">
-      <form>
-        <input type='text'></input>
-        <input type='submit' value='Создать пост'></input>
-      </form>
+      <Link to="/posts/new">Создать пост</Link>
       <div className='post-container'>
         { posts.map((post) => <Post created={ post.created } content={ post.content } key={ post.id }/>)}
       </div>

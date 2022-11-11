@@ -23,6 +23,8 @@ function NewPost() {
     .then(_ => setActive(false))
   }
 
+  const onCloseHandler = () => setActive(false);
+
   return (
     <>
     { !active ? <Navigate to="/" /> : 
@@ -30,6 +32,7 @@ function NewPost() {
       <h3 className='new-post--title'>Новый пост</h3>
       <textarea ref={ text }></textarea>
       <input type='submit'></input>
+      <div className='close' onClick={ onCloseHandler }>x</div>
     </form>
     }
     </>

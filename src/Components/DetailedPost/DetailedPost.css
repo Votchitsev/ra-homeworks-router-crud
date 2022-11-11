@@ -1,0 +1,29 @@
+.post__detailed {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 15vh auto;
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+.btns-container {
+  width: 40%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(188, 152, 222);
+}

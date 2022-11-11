@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Main.css';
-import Post from './Post';
+import Post from '../Post/Post';
 
 function Main() {
   let [posts, setPosts] = useState([]);
@@ -16,7 +16,7 @@ function Main() {
     <div className="wrapper">
       <Link to="/posts/new">Создать пост</Link>
       <div className='post-container'>
-        { posts.map((post) => <Post created={ post.created } content={ post.content } key={ post.id }/>)}
+        { posts.map((post) => <Post created={ post.created } content={ post.content } key={ post.id } id={ post.id }/>)}
       </div>
     </div>
   )

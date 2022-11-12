@@ -21,8 +21,20 @@ function ChangePost() {
     navigate('/');
   }
 
-  const onSubmitHandler = () => {
-    console.log('hey');
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+    
+    fetch('http://localhost:8000/posts', {
+      method: 'POST',
+      body: JSON.stringify({
+        id,
+        content: text.current.value,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    })
+    .then(navigate('/'))
   }
 
   return (

@@ -27,6 +27,10 @@ function DetailedPost() {
     }).then(_ => navigate('/'));
   }
 
+  const onCloseHandler = () => {
+    navigate('/');
+  }
+
   return (
     <div className="post__detailed">
       <div className="post__user-name">User</div>
@@ -36,6 +40,7 @@ function DetailedPost() {
         <button className="change-btn" onClick={ onChangeHandler }>Изменить</button>
         <button className="delete-btn" onClick={ onDeleteHandler }>Удалить</button>
       </div>
+      <div className="close" id="post-detailed-close" onClick={ onCloseHandler }>x</div>
     </div>
   )
 }

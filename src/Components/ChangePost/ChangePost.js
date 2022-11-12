@@ -18,7 +18,7 @@ function ChangePost() {
   }, [post])
 
   const onCloseHandler = () => {
-    navigate('/');
+    navigate(`/posts/${id}`);
   }
 
   const onSubmitHandler = (e) => {
@@ -34,7 +34,7 @@ function ChangePost() {
         'Content-Type': 'application/json',
       }
     })
-    .then(navigate('/'))
+    .then(_ => navigate('/'))
   }
 
   return (
